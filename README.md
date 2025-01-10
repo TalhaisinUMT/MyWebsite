@@ -29,19 +29,22 @@ Features:
 
 
 
-Project Structure:
+#Project Structure:
 
 MyWebsite/
 
 ├── blog/
 
 │   ├── migrations/
+
 │   ├── templates/
 │   │   └── blog/
 │   │       └── post_list.html
+
 │   ├── static/
 │   │   └── blog/
 │   │       └── style.css
+
 │   ├── __init__.py
 │   ├── admin.py
 │   ├── apps.py
@@ -62,7 +65,7 @@ MyWebsite/
 
 
 
-Setup Instructions:
+#Setup Instructions:
 
 1. Clone the repository:
    git clone <repository_url>
@@ -97,7 +100,7 @@ Setup Instructions:
 
 
 
- How It Works:
+ #How It Works:
 
  Homepage: Displays a list of blog posts with their titles and creation timestamps.
  
@@ -105,7 +108,7 @@ Setup Instructions:
 
 
 
- Technologies Used:
+ #Technologies Used:
 
  Backend Framework: Django
  
