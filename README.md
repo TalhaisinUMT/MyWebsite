@@ -4,7 +4,7 @@ MyWebsite Django Project
 
 This is a Django based project called MyWebsite, which includes a blog application. The project demonstrates the basic setup and functionality of a Django app, following the recommended structure and best practices.
 
-Features:
+# Features:
 
 1. App Structure:
     A Django project named MyWebsite containing an app named blog.
@@ -29,7 +29,7 @@ Features:
 
 
 
-#Project Structure:
+# Project Structure:
 
 MyWebsite/
 
@@ -65,7 +65,7 @@ MyWebsite/
 
 
 
-#Setup Instructions:
+# Setup Instructions:
 
 1. Clone the repository:
    git clone <repository_url>
@@ -100,7 +100,7 @@ MyWebsite/
 
 
 
- #How It Works:
+ # How It Works:
 
  Homepage: Displays a list of blog posts with their titles and creation timestamps.
  
@@ -108,7 +108,7 @@ MyWebsite/
 
 
 
- #Technologies Used:
+ # Technologies Used:
 
  Backend Framework: Django
  
