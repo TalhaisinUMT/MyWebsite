@@ -32,7 +32,9 @@ Features:
 Project Structure:
 
 MyWebsite/
+
 ├── blog/
+
 │   ├── migrations/
 │   ├── templates/
 │   │   └── blog/
@@ -47,12 +49,14 @@ MyWebsite/
 │   ├── tests.py
 │   ├── urls.py
 │   ├── views.py
+
 ├── MyWebsite/
 │   ├── __init__.py
 │   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   ├── wsgi.py
+
 ├── manage.py
 
 
@@ -61,35 +65,34 @@ MyWebsite/
 Setup Instructions:
 
 1. Clone the repository:
-   bash
    git clone <repository_url>
+   
    cd MyWebsite
    
 
 2. Create and activate a virtual environment:
-   bash
    python m venv env
+   
    source env/bin/activate   For Linux/Mac
+   
    env\Scripts\activate      For Windows
    
 
-3. Install dependencies:
-   bash
+4. Install dependencies:
    pip install r requirements.txt
    
 
-4. Apply migrations:
-   bash
+6. Apply migrations:
    python manage.py makemigrations
+   
    python manage.py migrate
    
 
-5. Run the development server:
-   bash
+8. Run the development server:
    python manage.py runserver
    
 
-6. Access the application:
+9. Access the application:
    Open a browser and visit: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 
@@ -97,6 +100,7 @@ Setup Instructions:
  How It Works:
 
  Homepage: Displays a list of blog posts with their titles and creation timestamps.
+ 
  Admin Panel: Manage posts and other app features at [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/).
 
 
@@ -104,8 +108,11 @@ Setup Instructions:
  Technologies Used:
 
  Backend Framework: Django
+ 
  Database: SQLite (default Django database)
+ 
  Frontend: HTML, CSS (basic styling)
+ 
  Version Control: Git & GitHub
 
 
