@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Blog Posts</h1>
+    <form method="get" action="{% url 'home' %}" class="mb-4">
+        <input type="text" name="q" placeholder="Search posts..." class="form-control">
+        <button type="submit" class="btn btn-primary mt-2">Search</button>
+    </form>
+    {% for post in posts %}
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title"><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+                <p class="card-text">{{ post.content|truncatechars:200 }}</p>
+                <p class="text-muted">Posted by {{ post.author }} on {{ post.created_at }}</p>
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" alt="{{ post.title }}" class="img-fluid">
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
